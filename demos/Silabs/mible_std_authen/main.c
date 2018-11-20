@@ -162,7 +162,7 @@ static void advertising_init(void)
 {
   MI_LOG_INFO("advertising init...\n");
   // MI adv and resp data
- /* mibeacon_frame_ctrl_t frame_ctrl = {
+  mibeacon_frame_ctrl_t frame_ctrl = {
     .time_protocol = 0,
     .is_encrypt = 0,
     .mac_include = 1,
@@ -211,9 +211,9 @@ static void advertising_init(void)
 
   MI_LOG_INFO("adv mi service data:");
   MI_LOG_HEXDUMP(adv_data, adv_len);
-  */
+
   // iHealth adv and resp data
-  // adv data
+  /*// adv data
   uint8_t adv_data[31]={0};
    uint8_t adv_len=0;
    // add flags
@@ -261,6 +261,7 @@ static void advertising_init(void)
   MI_LOG_HEXDUMP(adv_data, adv_len);
   MI_LOG_INFO("scan resp data:");
   MI_LOG_HEXDUMP(scan_resp_data, scan_resp_len);
+  */
   return;
 }
 
